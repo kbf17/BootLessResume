@@ -22,6 +22,9 @@
   border: 5px solid black;
   background-color: white;
 }
+#experience {
+  overflow: auto;
+}
 #experience .right {
   padding-bottom: 20px;
 }
@@ -40,13 +43,12 @@
 }
 #work .project {
   max-width: 100%;
+  width: 400px;
+  height: 200px;
 }
 #work img {
   height: 200px;
-}
-.equal {
-  display: -webkit-flex;
-  display: flex;
+  width: 400px;
 }
 #contact {
   clear: both;
