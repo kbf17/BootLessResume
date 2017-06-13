@@ -22,9 +22,34 @@
   border: 5px solid black;
   background-color: white;
 }
-.project {
-  width: 300px;
+#experience .right {
+  padding-bottom: 20px;
+}
+#experience h4 {
+  font-style: italic;
+  font-weight: 500;
+}
+#experience hr {
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-top: 3px solid #eee;
+}
+#work {
+  clear: both;
+  /* text-align: center; */
+}
+#work .project {
+  max-width: 100%;
+}
+#work img {
   height: 200px;
+}
+.equal {
+  display: -webkit-flex;
+  display: flex;
+}
+#contact {
+  clear: both;
 }
 .title-text {
   font-family: "Crimson Text", serif;

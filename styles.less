@@ -22,7 +22,7 @@
 //headshot
 
 //greeting space
-#about{
+#about {
     .hello-left {
         text-align: right;
         padding-right: 24px;
@@ -34,14 +34,43 @@
 }
 
 //experience
-
-
-//projects
-.project {
-    width: 300px;
-    height: 200px;
+#experience {
+    .right {
+        padding-bottom: 20px;
+    }
+    h4 {
+        font-style: italic;
+        font-weight: 500;
+    }
+    hr {
+        margin-top: 0;
+        margin-bottom: 10px;
+        border-top: 3px solid #eee;
+    }
 }
 
+//projects
+#work {
+    clear: both;
+   /* text-align: center; */
+
+        .project {
+            max-width: 100%
+        }
+        img {
+            height: 200px;
+        }
+}
+
+.equal {  
+    display: -webkit-flex;
+    display: flex;
+}
+
+//contact
+#contact {
+    clear:both
+}
 //universal styles
 @accent-color: orangered;
 
