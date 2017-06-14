@@ -14,6 +14,20 @@
 .navbar a {
   color: black;
 }
+.headshot {
+  margin-left: 15em;
+}
+.headshot h1 {
+  font-size: 48px;
+}
+.headshot .headshot-text {
+  height: 140px;
+  width: 400px;
+  position: relative;
+  bottom: 6em;
+  margin-left: 20em;
+}
+/*mobile*/
 #about .hello-left {
   text-align: right;
   padding-right: 24px;
@@ -51,14 +65,15 @@
   width: inherit;
 }
 /*Mobile*/
-@media (max-width: 799px) {
+@media (max-width: 767px) {
   .project {
     height: 150px;
     width: 300px;
     left: 25%;
   }
 }
-@media (min-width: 800px) {
+/*Desktop*/
+@media (min-width: 768px) {
   .project {
     max-width: 100%;
     width: 400px;
@@ -69,37 +84,44 @@
 #contact {
   clear: both;
   padding-top: 2em;
+  position: relative;
 }
 #contact h1 {
-  font-size: 48px;
+  font-size: 58px;
 }
 .work-together {
   font-size: 12px;
   color: lightgrey;
 }
 /*Larger phones up to desktops */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   #contact h1 {
     position: relative;
-    display: inline;
+    display: inline-flex;
+    margin-left: 20%;
   }
   .work-together {
-    text-align: right;
-    float: right;
+    display: inline-flex;
+    position: absolute;
+    top: 80px;
+    right: 25%;
   }
 }
 /* Mobile */
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   #contact h1 {
     display: block;
     text-align: center;
+    margin-left: 0px;
   }
   #contact .work-together {
     text-align: center;
+    padding-right: 0;
   }
 }
 form {
   width: 75%;
+  padding-top: 20px;
 }
 form .form-control {
   color: darkgrey;
@@ -111,7 +133,7 @@ form .btn {
   color: white;
 }
 /*Desktops */
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   form {
     width: 50%;
   }
