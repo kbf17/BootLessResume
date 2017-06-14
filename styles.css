@@ -38,6 +38,11 @@
   margin-bottom: 10px;
   border-top: 3px solid black;
 }
+@media (max-width: 991px) {
+  .job {
+    padding: 10px;
+  }
+}
 #work {
   clear: both;
 }
@@ -45,8 +50,53 @@
   height: inherit;
   width: inherit;
 }
+/*Mobile*/
+@media (max-width: 799px) {
+  .project {
+    height: 150px;
+    width: 300px;
+    left: 25%;
+  }
+}
+@media (min-width: 800px) {
+  .project {
+    max-width: 100%;
+    width: 400px;
+    height: 200px;
+    left: 0;
+  }
+}
 #contact {
   clear: both;
+  padding-top: 2em;
+}
+#contact h1 {
+  font-size: 48px;
+}
+.work-together {
+  font-size: 12px;
+  color: lightgrey;
+}
+/*Larger phones up to desktops */
+@media (min-width: 600px) {
+  #contact h1 {
+    position: relative;
+    display: inline;
+  }
+  .work-together {
+    text-align: right;
+    float: right;
+  }
+}
+/* Mobile */
+@media (max-width: 599px) {
+  #contact h1 {
+    display: block;
+    text-align: center;
+  }
+  #contact .work-together {
+    text-align: center;
+  }
 }
 form {
   width: 75%;
@@ -59,6 +109,12 @@ form .form-control {
 form .btn {
   background-color: orangered;
   color: white;
+}
+/*Desktops */
+@media (min-width: 800px) {
+  form {
+    width: 50%;
+  }
 }
 footer {
   padding-top: 50px;
@@ -96,22 +152,4 @@ footer .bye {
 }
 body {
   font-family: "Raleway", serif;
-}
-@media (min-width: 800px) {
-  form {
-    width: 50%;
-  }
-  .project {
-    max-width: 100%;
-    width: 400px;
-    height: 200px;
-    left: 0;
-  }
-}
-@media (max-width: 799px) {
-  .project {
-    height: 150px;
-    width: 300px;
-    left: 25%;
-  }
 }

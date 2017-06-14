@@ -50,6 +50,12 @@
         border-top: @hr;
     }
 }
+@media (max-width: 991px) {
+    .job{
+        padding: 10px;     
+    }
+  
+}
 
 //projects
 #work {
@@ -59,14 +65,64 @@
         width: inherit;
     }
 }
+/*Mobile*/
+@media (max-width: 799px) {
+    .project {
+    height: 150px;
+    width: 300px;
+    left: 25%;
+    }
+}
 
-
-
+@media (min-width: 800px) {
+    .project {
+    max-width: 100%;
+    width: 400px;
+    height: 200px;
+    left: 0;
+    }
+}
 
 //contact
 #contact {
-    clear:both
+    clear:both;
+    padding-top: 2em;
+    h1 {
+        font-size: 48px;
+    }
 }
+.work-together {
+    font-size: 12px;
+    color: lightgrey;
+}
+
+/*Larger phones up to desktops */
+@media (min-width: 600px){
+    #contact {
+        h1 {
+            position: relative;
+            display: inline;
+        }
+    }
+
+    .work-together {
+        text-align: right;
+        float: right;
+    }
+}
+/* Mobile */
+@media (max-width: 599px){
+    #contact {
+        h1 {
+            display: block;
+            text-align: center;
+        }
+        .work-together {
+            text-align: center;
+        }
+    }
+}
+
 form {
     width: 75%;
     .form-control {
@@ -79,6 +135,13 @@ form {
         color: white;
     }
 }
+/*Desktops */
+@media (min-width: 800px) {
+    form {
+        width:50%;
+    }
+}
+
 
 //footer
 footer {
@@ -127,26 +190,4 @@ footer {
 body {
     font-family: "Raleway", serif;
 }
-
 //media queries
-
-@media (min-width: 800px) {
-    form {
-        width:50%;
-    }
-    .project {
-        max-width: 100%;
-        width: 400px;
-        height: 200px;
-        left: 0;
-    }
-
-}
-
-@media (max-width: 799px) {
-        .project {
-        height: 150px;
-        width: 300px;
-        left: 25%;
-        }
-}
