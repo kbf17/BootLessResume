@@ -5,7 +5,7 @@
 .navbar .navbar-header {
   border: 3px solid black;
   color: orangered;
-  padding: 10px;
+  padding: 12px;
 }
 .navbar li {
   border-bottom: 3px solid orangered;
@@ -17,22 +17,30 @@
 .headshot h1 {
   font-size: 48px;
 }
+.headshot h2 {
+  font-variant: small-caps;
+}
+/*Mobile*/
 @media (max-width: 767px) {
   .headshot {
     text-align: center;
   }
 }
+/*Desktop*/
 @media (min-width: 768px) {
   .headshot {
     margin-left: 15em;
   }
   .headshot .headshot-text {
     height: 140px;
-    width: 400px;
+    width: 415px;
     position: relative;
     bottom: 6em;
     margin-left: 20em;
   }
+}
+#about h1 {
+  font-size: 63px;
 }
 #about .hello-left {
   text-align: right;
@@ -161,7 +169,7 @@ footer .bye {
   padding: 25px;
 }
 .title-text {
-  font-family: "Crimson Text", serif;
+  font-family: "Playfair Display", serif;
 }
 .color-text {
   color: orangered;
@@ -178,6 +186,9 @@ footer .bye {
 .center-items {
   margin: 0 auto;
 }
-body {
-  font-family: "Raleway", serif;
+/* body {
+    font-family: "Roboto", serif;
+} */
+bold {
+  font-weight: 800;
 }
