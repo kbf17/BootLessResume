@@ -42,13 +42,12 @@
         padding-bottom: 20px;
     }
     h4 {
-        font-style: italic;
         font-weight: 500;
     }
     hr {
         margin-top: 0;
         margin-bottom: 10px;
-        border-top: 3px solid #eee;
+        border-top: @hr;
     }
 }
 
@@ -90,9 +89,24 @@ form {
 //footer
 footer {
     padding-top: 50px;
+    padding-bottom: 25px;
+    text-align: center;
+    hr {
+        border-top: @hr;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    .bye {
+        font-style: italic;
+        padding: 25px;
+    }
 }
 //universal styles
 @accent-color: orangered;
+
+@hr: 3px solid black;
 
 .title-text {
     font-family: "Crimson Text", serif;

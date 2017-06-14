@@ -31,13 +31,12 @@
   padding-bottom: 20px;
 }
 #experience h4 {
-  font-style: italic;
   font-weight: 500;
 }
 #experience hr {
   margin-top: 0;
   margin-bottom: 10px;
-  border-top: 3px solid #eee;
+  border-top: 3px solid black;
 }
 #work {
   clear: both;
@@ -66,6 +65,22 @@ form .form-control {
 form .btn {
   background-color: orangered;
   color: white;
+}
+footer {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+footer hr {
+  border-top: 3px solid black;
+}
+footer img {
+  height: 50px;
+  width: 50px;
+}
+footer .bye {
+  font-style: italic;
+  padding: 25px;
 }
 .title-text {
   font-family: "Crimson Text", serif;
