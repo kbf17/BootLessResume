@@ -30,12 +30,14 @@
     .hello-right {
         border: 5px solid black;
         background-color: white;
+        padding: 15px;
     }
 }
 
 //experience
 #experience {
     overflow: auto;
+    padding-bottom: 50px;
     .right {
         padding-bottom: 20px;
     }
@@ -71,6 +73,23 @@
 //contact
 #contact {
     clear:both
+}
+form {
+    width: 50%;
+    .form-control {
+        color: darkgrey;
+        background-color: #eee;
+        font-style: italic;
+    }
+    .btn {
+        background-color: @accent-color;
+        color: white;
+    }
+}
+
+//footer
+footer {
+    padding-top: 50px;
 }
 //universal styles
 @accent-color: orangered;

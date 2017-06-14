@@ -21,9 +21,11 @@
 #about .hello-right {
   border: 5px solid black;
   background-color: white;
+  padding: 15px;
 }
 #experience {
   overflow: auto;
+  padding-bottom: 50px;
 }
 #experience .right {
   padding-bottom: 20px;
@@ -52,6 +54,18 @@
 }
 #contact {
   clear: both;
+}
+form {
+  width: 50%;
+}
+form .form-control {
+  color: darkgrey;
+  background-color: #eee;
+  font-style: italic;
+}
+form .btn {
+  background-color: orangered;
+  color: white;
 }
 .title-text {
   font-family: "Crimson Text", serif;
