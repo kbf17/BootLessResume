@@ -15,19 +15,23 @@
   color: black;
 }
 .headshot {
-  margin-left: 15em;
+  text-align: center;
 }
 .headshot h1 {
   font-size: 48px;
 }
-.headshot .headshot-text {
-  height: 140px;
-  width: 400px;
-  position: relative;
-  bottom: 6em;
-  margin-left: 20em;
+@media (min-width: 768px) {
+  .headshot {
+    margin-left: 15em;
+  }
+  .headshot .headshot-text {
+    height: 140px;
+    width: 400px;
+    position: relative;
+    bottom: 6em;
+    margin-left: 20em;
+  }
 }
-/*mobile*/
 #about .hello-left {
   text-align: right;
   padding-right: 24px;
