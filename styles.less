@@ -21,12 +21,16 @@
 
 //headshot
 .headshot {
-    text-align: center;
     h1 {
         font-size: 48px;
     }
 }
-@media (min-width: 768px){
+@media (max-width: 767px) {
+    .headshot {
+        text-align: center;
+    }
+}
+@media (min-width: 768px) {
     .headshot {
         margin-left: 15em;
         .headshot-text {

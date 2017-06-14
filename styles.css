@@ -14,11 +14,13 @@
 .navbar a {
   color: black;
 }
-.headshot {
-  text-align: center;
-}
 .headshot h1 {
   font-size: 48px;
+}
+@media (max-width: 767px) {
+  .headshot {
+    text-align: center;
+  }
 }
 @media (min-width: 768px) {
   .headshot {
