@@ -54,18 +54,12 @@
 //projects
 #work {
     clear: both;
-   /* text-align: center; */
-
-        .project {
-            max-width: 100%;
-            width: 400px;
-            height: 200px;
-        }
-        img {
-            height: 200px;
-            width: 400px;
-        }
+    img {
+        height: inherit;
+        width: inherit;
+    }
 }
+
 
 
 
@@ -74,7 +68,7 @@
     clear:both
 }
 form {
-    width: 50%;
+    width: 75%;
     .form-control {
         color: darkgrey;
         background-color: #eee;
@@ -132,4 +126,27 @@ footer {
 
 body {
     font-family: "Raleway", serif;
+}
+
+//media queries
+
+@media (min-width: 800px) {
+    form {
+        width:50%;
+    }
+    .project {
+        max-width: 100%;
+        width: 400px;
+        height: 200px;
+        left: 0;
+    }
+
+}
+
+@media (max-width: 799px) {
+        .project {
+        height: 150px;
+        width: 300px;
+        left: 25%;
+        }
 }
